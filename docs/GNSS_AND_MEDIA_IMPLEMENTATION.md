@@ -93,54 +93,38 @@ The historical video uses `<video class="source-video" muted loop playsinline co
 No private strategy files, founder research figures or child photographs should be included without explicit approval and sufficient permission.
 
 
-## Real full-bleed video backgrounds (22 November 2026)
+## Selected background photographs and videos (22 November 2026)
 
-The supplied website recording shows a continuously looping **video**, with
-visible cuts between genuine documentary shots. Foreground navigation, copy,
-buttons and callouts stay stationary above a dark tint. The earlier
-photograph-based CSS drift effect was removed.
+The website mixes two types of genuine documentary material behind existing
+static text, buttons and navigation. No AI-generated image, faux motion
+overlay or additional top-level page structure is required.
 
-GeoFrontier now uses real NASA footage edited into compact, silent H.264 MP4
-loops. There are no GIFs, faux video layers, AI-generated shots, or animated
-still images in the new hero backgrounds.
+| Page | Hero background | Footer background |
+| --- | --- | --- |
+| Home | A muted, looping NASA Earth-observation video | The same NASA video |
+| Expertise | A still USGS GNSS receiver photograph | The same USGS photograph |
+| Forecasts & Monitoring | A muted NASA Earth-observation video | A still NASA Mozambique flood satellite image |
+| Education | A still NASA Suomi NPP Earth-observation image | The same NASA image |
+| All other pages | Existing static design | Existing static design |
 
-- **Home**: `assets/media/geofrontier-home-reel.mp4`. A full-width
-  documentary video appears behind the original "Understanding the Earth"
-  headline, description and actions. The previous standalone Apollo 17 image
-  frame is no longer displayed in the active hero; its documentary source is
-  retained in the media register.
-- **Expertise**: same home reel reused behind the existing hero text and
-  technical statement, to minimise total downloads.
-- **Forecasts & Monitoring**: `assets/media/geofrontier-monitoring-reel.mp4`
-  behind the existing warning-scope note and introduction.
-- **Education**: `assets/media/geofrontier-learning-reel.mp4` behind the
-  learning introduction and existing informational card.
-- **Matching footers** on only those four pages reuse each page's video
-  file behind the original footer logo, links and copy.
-- Other pages remain untouched and static.
+The dark overlay is retained for legibility without moving the headings or
+buttons. The source images and video are stored in `assets/media/`. Images use
+the `.geofrontier-photo-media` class; videos use
+`.geofrontier-bg-video`. Existing source documentation remains public at
+`media-credits.html`, including original USGS/NASA media pages.
 
-**NASA original footage:**
-- NASA Johnson, [4K ISS footage, April 2016](https://svs.gsfc.nasa.gov/30771/)
-- NASA Goddard, [Earth From Space (2014 compilation)](https://svs.gsfc.nasa.gov/11834/)
+**Video sources:** NASA Johnson, [ISS footage](https://svs.gsfc.nasa.gov/30771/),
+and NASA Goddard, [Earth From Space](https://svs.gsfc.nasa.gov/11834/).
+**Photographs:** USGS,
+[GNSS instrument](https://www.usgs.gov/media/images/gnss-receiver-monitoring-land-motion);
+NASA API documentation
+[Suomi NPP example](https://github.com/nasa/api-docs);
+NASA Earth Observatory,
+[2026 Mozambique flooding](https://science.nasa.gov/earth/earth-observatory/floods-inundate-southern-mozambique/).
 
-The loops are cropped and compressed from actual moving footage. They are not
-current observational feeds or GeoFrontier projects. The original producers
-are credited on `media-credits.html#background-video`.
+Videos play without audio only while in view. The browser's reduced-motion
+or data-saver settings prevent autoplay and use a static poster instead.
+Photographs remain static without any CSS zoom, drift or parallax.
 
-**Build pipeline:**
-- `scripts/build_background_reels.py` downloads source footage, cuts video
-  sections that start after NASA title cards, removes source audio, normalises
-  size and frame rate, concatenates clips, and generates video poster frames.
-- `.github/workflows/video-hero.yml` installs FFmpeg in GitHub Actions and
-  commits output files to `assets/media/`.
-- HTML uses `<video autoplay muted loop playsinline preload="metadata">`
-  as a purely decorative background.
-- Appended classes in `css/site-v2.css`: `.geofrontier-video-hero`,
-  `.geofrontier-video-page-hero`, `.geofrontier-video-footer`,
-  `.geofrontier-video-media`, and `.geofrontier-video-shade`.
-- `js/site-v2.js` pauses out-of-view videos and respects reduced-motion
-  and data-saver preferences. A still **frame from the actual video** is
-  retained as a graceful static fallback.
-
-This approach keeps the company’s approved logo, copy, page structure, lower
-section layouts and documentary media credits.
+The source document and approved GF-and-satellite company logo are unchanged,
+as are the other site sections, company claims, and private-project exclusions.
