@@ -624,17 +624,17 @@
 .ambient-hero::before {
   inset: -22% 38% -22% -12%;
   background: url("../assets/media/suomi-npp.webp") center / cover no-repeat;
-  opacity: .26;
+  opacity: .40;
   filter: saturate(.6) grayscale(.18) blur(1px);
   transform-origin: 35% 55%;
-  animation: geofrontier-earth-drift 31s ease-in-out infinite alternate;
+  animation: geofrontier-earth-drift 21s ease-in-out infinite alternate;
 }
 .ambient-hero::after {
   inset: 0 38% 0 0;
   background: linear-gradient(90deg,
-    rgba(245,242,235,.88) 0%,
-    rgba(245,242,235,.80) 39%,
-    rgba(245,242,235,.42) 78%,
+    rgba(245,242,235,.68) 0%,
+    rgba(245,242,235,.58) 39%,
+    rgba(245,242,235,.34) 78%,
     rgba(245,242,235,0) 100%);
 }
 .ambient-hero .hero-copy {
@@ -648,7 +648,7 @@
   border-radius: 8px 8px 100px 8px;
 }
 .ambient-hero .hero-image img {
-  animation: geofrontier-photo-breathe 27s ease-in-out infinite alternate;
+  animation: geofrontier-photo-breathe 20s ease-in-out infinite alternate;
   transform-origin: center 58%;
 }
 .ambient-hero .hero-image figcaption {
@@ -661,17 +661,17 @@
   background-position: 50% 44%;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: .27;
+  opacity: .42;
   filter: saturate(.6) contrast(.93);
-  animation: geofrontier-earth-drift 32s ease-in-out infinite alternate;
+  animation: geofrontier-earth-drift 23s ease-in-out infinite alternate;
 }
 .ambient-page-hero::after {
   inset: 0;
   background: linear-gradient(90deg,
-    rgba(245,242,235,.95) 0%,
-    rgba(245,242,235,.89) 42%,
-    rgba(245,242,235,.73) 72%,
-    rgba(245,242,235,.64) 100%);
+    rgba(245,242,235,.78) 0%,
+    rgba(245,242,235,.73) 42%,
+    rgba(245,242,235,.63) 72%,
+    rgba(245,242,235,.56) 100%);
 }
 .ambient-page-hero--services::before {
   background-image: url("../assets/media/gnss-receiver.webp");
@@ -688,31 +688,31 @@
 /* Monitoring retains its light green palette; Education its ivory palette. */
 .ambient-page-hero--monitoring::after {
   background: linear-gradient(90deg,
-    rgba(236,242,233,.96),
-    rgba(236,242,233,.87) 53%,
-    rgba(236,242,233,.68));
+    rgba(236,242,233,.82),
+    rgba(236,242,233,.72) 53%,
+    rgba(236,242,233,.62));
 }
 .ambient-page-hero--education::after {
   background: linear-gradient(90deg,
-    rgba(244,241,233,.96),
-    rgba(244,241,233,.87) 53%,
-    rgba(244,241,233,.67));
+    rgba(244,241,233,.82),
+    rgba(244,241,233,.72) 53%,
+    rgba(244,241,233,.62));
 }
 /* The existing footer, logo and links remain, with a slow NASA nighttime
    lights photograph moving BEHIND them on the selected pages only. */
 .ambient-footer::before {
   inset: -23% -13%;
   background: url("../assets/media/nasa-night-lights.webp") 50% 58% / cover no-repeat;
-  opacity: .24;
+  opacity: .39;
   filter: saturate(.55) contrast(.96);
-  animation: geofrontier-footer-drift 42s ease-in-out infinite alternate;
+  animation: geofrontier-footer-drift 30s ease-in-out infinite alternate;
 }
 .ambient-footer::after {
   inset: 0;
   background: linear-gradient(100deg,
-    rgba(20,47,52,.90) 0%,
-    rgba(20,47,52,.75) 48%,
-    rgba(20,47,52,.85) 100%);
+    rgba(20,47,52,.68) 0%,
+    rgba(20,47,52,.58) 48%,
+    rgba(20,47,52,.69) 100%);
 }
 @keyframes geofrontier-earth-drift {
   from { transform: translate3d(-2%,1%,0) scale(1.025); }
