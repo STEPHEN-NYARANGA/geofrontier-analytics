@@ -1,6 +1,6 @@
 # GeoFrontier Analytics
 
-Website for **GeoFrontier Analytics**, a proposed scientific consultancy focused on Earth observation, flood and environmental monitoring, climate forecasting support, geospatial analysis and responsible applications of AI.
+Website for **GeoFrontier Analytics**, a proposed scientific consultancy and capacity building initiative focused on Earth observation, environmental monitoring, forecasting support, geospatial data and responsible AI education.
 
 Live URL (after GitHub Pages deployment): https://stephen-nyaranga.github.io/geofrontier-analytics/
 
@@ -10,7 +10,8 @@ Live URL (after GitHub Pages deployment): https://stephen-nyaranga.github.io/geo
 | --- | --- |
 | `index.html` | Company introduction, mission and vision, core capabilities, focus areas, links to other pages |
 | `services.html` | Earth observation, InSAR, climate analytics, forecasting and monitoring, data/AI; methods, deliverables, limitations and engagements |
-| `monitoring.html` | Proposed flood monitoring, ENSO/La Niña climate-driver monitoring, seasonal and subseasonal forecasting support, drought, extreme heat and environmental change services. Clearly distinguishes analytical support from official warnings. |
+| `monitoring.html` | Proposed flood monitoring, ENSO and La Niña climate-driver monitoring, subseasonal forecasts, drought, extreme heat and environmental observation. Explicitly separates analytical support from official warnings. |
+| `education.html` | Proposed Earth observation and AI learning pathways for primary and secondary schools, TVET institutions, colleges, universities and educators, with safeguarding and no accreditation claims. |
 | `sectors.html` | Government, energy/infrastructure, environment, agriculture/water, research; intended applications and limits |
 | `approach.html` | Workflow, scientific quality standards, deliverables, collaboration and data safeguards |
 | `insights.html` | Original technical explainers, links to data sources, a glossary and the independent forecasting initiative |
@@ -36,6 +37,9 @@ The homepage's Apollo 17 Earth photograph is linked with NASA public-domain cred
 - Founder: Stephen Nyaranga. Team and Leadership positions must remain unfilled until confirmed.
 - Avoid fictional employees, addresses, contact details, contracts, testimonials, registrations, certificates, quantitative project outcomes or client endorsements.
 - Service and sector applications are prospective rather than claims of completed commercial delivery.
+- The GeoFrontier Learning Initiative is a proposed programme with no confirmed partner institutions, completed cohorts or accredited qualifications.
+- For programmes involving minors, host-institution supervision, parental and institutional permissions where required, data minimisation and age-appropriate technology are essential.
+- **Keep the founder’s business model, pricing, funding structure, entity options and internal strategy document private. Do not publish those plans to the website.**
 - Forecast interpretation and hazard monitoring services must cite sources, issue times, uncertainty, validation status and lead times. GeoFrontier does not currently provide 24/7 alerts, official hazard warnings or guaranteed live forecasts.
 - Public warnings and emergency directives remain with authorised national meteorological, hydrological and disaster-management authorities.
 - Any future project needs a verifiable source and permission to publish images, results, datasets and partner names.
@@ -54,4 +58,4 @@ Before a formal business launch, verify name clearance and registration with Ken
 
 ## Audit checklist
 
-Verify all local links and anchored sections, visible approved logo, mobile navigation, academic-project exclusion, clear separation of forecasting competition work and proposed consulting services, mission/vision/values presence, empty Team/Leadership, and successful GitHub Pages deployment after each substantive change.
+Verify all local links and anchored sections, visible approved logo, mobile navigation, age-appropriate education claims, academic-project exclusion, clear separation of forecasting competition work and proposed consulting services, mission/vision/values presence, empty Team/Leadership, and successful GitHub Pages deployment after each substantive change.
