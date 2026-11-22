@@ -1,47 +1,38 @@
-# GeoFrontier Analytics — website prototype
+# GeoFrontier Analytics
 
-A responsive, original static website for **GeoFrontier Analytics**, a provisional geospatial AI and Earth intelligence company. This is a development prototype; it is not an assertion of incorporation, commercial history, or operational certifications.
+Official working website for **GeoFrontier Analytics**, a proposed geospatial science and Earth observation consultancy with an initial focus on Kenya and wider African applications.
 
-## Files
+Website: https://stephen-nyaranga.github.io/geofrontier-analytics/
 
-- `index.html` — homepage
-- `services.html` — service areas
-- `projects.html` — proposed portfolio and case-study themes
-- `about.html` — approach and business status
-- `contact.html` — prototype enquiry form
-- `css/styles.css` — shared visual design and responsive layouts
-- `js/main.js` — mobile menu, date, and email-draft form behavior
-- `assets/earth-africa.png` — original Earth-centred rendering produced from the bundled NASA Blue Marble Next Generation image in Basemap; base image credit: NASA Earth Observatory
-- `assets/favicon.svg` — original provisional brand icon
+## Current pages
 
-## Run locally
+- `index.html` — consultancy overview and areas of focus
+- `services.html` — technical expertise and service areas
+- `about.html` — company approach and founder; Team and Leadership are intentionally unfilled
+- `contact.html` — interim contact information; a dedicated business email is not yet configured
+- `projects.html` — neutral holding page for future approved company projects, not linked in the main navigation
 
-Open `index.html` in a browser. For reliable local testing, from this folder run:
+## Brand and implementation
 
-```bash
-python -m http.server 8000
-```
+- `assets/geofrontier-orbital-logo.png` — website-sized copy of the approved GF/satellite logo (original design retained separately)
+- `assets/favicon.svg` — simplified GF favicon for small browser icon sizes
+- `css/site-v2.css` — active responsive website design
+- `js/site-v2.js` — active navigation and year script
+- `css/styles.css` and `js/main.js` — historical V1 assets, no longer loaded by current pages
 
-Then visit `http://localhost:8000`.
+The homepage uses NASA's Apollo 17 Earth photograph, with credit and source linked on the page. No photos or figures from the founder's academic projects are used as company case studies.
 
-## Deploy on GitHub Pages
+## Editorial and accuracy policy
 
-1. Create a new repository and add the contents of this folder at its root.
-2. Commit and push to the default branch.
-3. In **Settings → Pages**, deploy from the selected branch and repository root.
-4. Update the published website URL and optionally connect a domain after verification.
+- Do not publish the founder's personal research projects or PhD work on this company site.
+- Do not present non-company academic work as GeoFrontier contracts.
+- Do not invent client logos, team or leadership members, partnerships, project results, or legal registration status.
+- Name Stephen Nyaranga as Founder. Leave team and leadership membership unfilled until people are appointed and have agreed to publication.
+- Document image provenance, limits of scientific conclusions and external-source permissions.
+- Business registration and procurement eligibility are still to be verified.
 
-No frameworks, databases, secrets, paid APIs, or build steps are required.
+## Deployment
 
-## Before publishing for business use
+Static HTML, CSS and JavaScript, hosted with GitHub Pages from the repository's `main` branch, root folder. No secrets, build step, framework, or production form backend are required.
 
-- Verify name and trademark availability; confirm incorporation and relevant regulatory statements.
-- Replace provisional copy with approved business details and founder profile.
-- Configure a real business email in `contact.html` (`data-email="..."`) or install a privacy-compliant contact backend. Until configured, the form displays a setup message and does not transmit data.
-- Review privacy and cookie obligations before adding analytics or data-collection services.
-- Publish actual, approved case studies with documented sources, licensing, validation and permissions.
-- Check public image attribution/licensing for any new visual assets.
-
-## Attribution
-
-The globe is generated from the NASA Blue Marble Next Generation image included with `mpl_toolkits.basemap_data`. Design, layout and logo are original and are *not* copies of UP42 branding. The screenshot shared for inspiration is intentionally not incorporated into the live site.
+Before a public business launch, verify company name/registration, confirm contact details, review accessibility, and activate a privacy-compliant enquiry method.
