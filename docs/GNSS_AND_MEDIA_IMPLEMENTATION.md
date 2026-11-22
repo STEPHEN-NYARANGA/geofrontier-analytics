@@ -91,3 +91,36 @@ The historical video uses `<video class="source-video" muted loop playsinline co
 7. Verify GitHub Pages has deployed the latest `main` commit.
 
 No private strategy files, founder research figures or child photographs should be included without explicit approval and sufficient permission.
+
+
+## Motion layer on selected site pages (22 November 2026)
+
+The site's existing layout is intentionally unchanged. This enhancement adds
+`ambient-hero` to the homepage hero, `ambient-page-hero` to the Expertise,
+Forecasts & Monitoring, and Education heroes, and `ambient-footer` on those
+same four pages. All other page heroes and footers remain static.
+
+- **Homepage:** a subtly drifting NASA Suomi NPP image **behind** the
+  existing headline and paragraph, while the original Apollo 17 Earth
+  photograph remains in its right-hand frame with a gentle slow zoom.
+- **Expertise:** a quietly moving USGS GNSS field photograph behind the
+  existing page-introduction text and callout.
+- **Forecasts & Monitoring:** a restrained NASA Mozambique flood observation
+  background behind the existing page-introduction text.
+- **Education:** a slowly moving NASA global observation background behind
+  the existing educational introduction.
+- **Footers of those four pages:** slow movement in the locally hosted NASA
+  nighttime-lights image behind the existing footer logo, links and sentences.
+
+Motion is purely decorative and built from locally hosted NASA/USGS assets,
+without a new video player, script dependency, generated artwork or download.
+The foreground content has its own stacking layer and a readable pale or dark
+gradient wash. Media attributions remain on the public `media-credits.html`
+page. The `prefers-reduced-motion: reduce` media query disables every new
+animation, leaving the static design in place.
+
+**Implementation:** class-only additions in four HTML files plus appended CSS
+rules near the end of `css/site-v2.css`. Existing navigation, buttons,
+headline copy, hero photographs, footer columns, galleries, and other page
+layouts were not replaced. The slow photo movement is not an operational
+satellite feed or live weather graphic.
