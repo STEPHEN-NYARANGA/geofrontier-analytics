@@ -11,7 +11,6 @@ from __future__ import annotations
 from io import BytesIO
 from pathlib import Path
 from urllib.request import Request, urlopen
-import subprocess
 
 ROOT = Path(__file__).resolve().parents[1]
 MEDIA = ROOT / "assets" / "media"
@@ -31,7 +30,7 @@ SOURCES = [
     ("gibs-landtemp", "https://raw.githubusercontent.com/nasa-gibs/gibs-web-examples/main/examples/cesium/gibs-layers/images/land_surface_temperature_day.png"),
     ("suomi-npp", "https://raw.githubusercontent.com/nasa/api-docs/gh-pages/assets/img/general/global_suomi_NPP.png"),
     ("gibs-terra", "https://raw.githubusercontent.com/nasa-gibs/gibs-web-examples/main/examples/cesium/gibs-layers/images/terra_corrected_reflectance.png"),
-    ("gibs-night", "https://raw.githubusercontent.com/nasa-gibs/gibs-web-examples/main/examples/cesium/gibs-layers/images/earth_at_night.png"),
+    ("nasa-night-lights", "https://raw.githubusercontent.com/nasa/api-docs/gh-pages/assets/img/general/US_nighttime_lights.jpg"),
     ("mozambique-flood-2000-still", "https://svs.gsfc.nasa.gov/vis/a000000/a001200/a001235/a001235_sidebyside_still.jpg"),
 ]
 VIDEO = (
@@ -75,29 +74,16 @@ for name, url in SOURCES:
 
 try:
     name, url = VIDEO
-    original = MEDIA / (name + "-original.mp4")
-    original.write_bytes(get_bytes(url, max_size=18_000_000))
     dst = MEDIA / (name + ".mp4")
-    # Short mute loop, modest bandwidth. The source is a historical NASA
-    # SVS animation of Mozambique flooding in 1999 and 2000.
-    subprocess.run(
-        ["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-i", str(original),
-         "-t", "12", "-an", "-vf", "scale=w=640:h=-2:flags=lanczos",
-         "-c:v", "libx264", "-preset", "slow", "-crf", "26", "-movflags", "+faststart", str(dst)],
-        check=True, timeout=95,
-    )
-    original.unlink()
+    dst.write_bytes(get_bytes(url, max_size=18_000_000))
     if dst.stat().st_size < 10000:
-        raise ValueError("Encoded video too small")
+        raise ValueError("Downloaded video too small")
     replacements['src="' + url + '"'] = 'src="assets/media/' + dst.name + '"'
     success.append((name, dst.stat().st_size))
 except Exception as exc:
     failed.append(("flood-video", str(exc)))
     print("Unable to cache flood video:", repr(exc))
-    try:
-        original.unlink(missing_ok=True)
-    except NameError:
-        pass
+    (MEDIA / (VIDEO[0] + ".mp4")).unlink(missing_ok=True)
 
 for page in PAGES:
     path = ROOT / page
