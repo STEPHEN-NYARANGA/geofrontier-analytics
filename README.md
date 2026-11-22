@@ -12,7 +12,8 @@ Live URL (after GitHub Pages deployment): https://stephen-nyaranga.github.io/geo
 | `services.html` | Earth observation, InSAR, climate analytics, data/AI; questions, methods, deliverables, limitations and engagements |
 | `sectors.html` | Government, energy/infrastructure, environment, agriculture/water, research; intended applications and limits |
 | `approach.html` | Workflow, scientific quality standards, deliverables, collaboration and data safeguards |
-| `insights.html` | Original short technical explainers, links to official data sources, plain-language glossary |
+| `insights.html` | Original technical explainers, links to data sources, a glossary and the independent forecasting initiative |
+| `forecasting.html` | An explicitly attributed, independent ECMWF AI Weather Quest competition project by the founder, with methods, reported results and limitations. It is not GeoFrontier client work or a commercial forecasting product. |
 | `about.html` | Proposed mission, vision, strategic goals, company values, founder, unfilled team and leadership, business readiness |
 | `contact.html` | Enquiry guidance, partnership pathways, founder's existing professional contact route and current business-status notice |
 | `privacy.html` | Accurate website information and privacy notice |
@@ -29,7 +30,7 @@ The homepage's Apollo 17 Earth photograph is linked with NASA public-domain cred
 
 ## Editorial safeguards
 
-- **Do not publish PhD work or the founder's personal research/projects as GeoFrontier case studies.**
+- **Do not publish PhD work or portray the founder's personal research as GeoFrontier client contracts.** The single forecasting initiative is displayed by the founder's explicit request and prominently labelled independent competition work.
 - The business is described as **in development**, not incorporated or procurement-qualified unless this can be verified.
 - Founder: Stephen Nyaranga. Team and Leadership positions must remain unfilled until confirmed.
 - Avoid fictional employees, addresses, contact details, contracts, testimonials, registrations, certificates, quantitative project outcomes or client endorsements.
