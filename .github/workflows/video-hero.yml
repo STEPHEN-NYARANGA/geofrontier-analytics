@@ -1,0 +1,41 @@
+name: Build NASA documentary background videos
+
+on:
+  push:
+    paths:
+      - scripts/build_background_reels.py
+      - .github/workflows/video-hero.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Check out GeoFrontier
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check ffmpeg availability
+        run: |
+          ffmpeg -version | head -1
+          ffprobe -version | head -1
+      - name: Download NASA footage and create real motion video reels
+        run: python scripts/build_background_reels.py
+      - name: Commit source-attributed optimised videos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/media/geofrontier-*.mp4 assets/media/geofrontier-*-poster.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m "Add compressed real NASA documentary hero motion footage"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo "No new assets"
+          fi
