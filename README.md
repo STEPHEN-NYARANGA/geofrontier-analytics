@@ -1,38 +1,53 @@
 # GeoFrontier Analytics
 
-Official working website for **GeoFrontier Analytics**, a proposed geospatial science and Earth observation consultancy with an initial focus on Kenya and wider African applications.
+Website for **GeoFrontier Analytics**, a proposed scientific consultancy focused on Earth observation, geospatial analysis, environmental intelligence and responsible applications of AI.
 
-Website: https://stephen-nyaranga.github.io/geofrontier-analytics/
+Live URL (after GitHub Pages deployment): https://stephen-nyaranga.github.io/geofrontier-analytics/
 
-## Current pages
+## Main website architecture
 
-- `index.html` — consultancy overview and areas of focus
-- `services.html` — technical expertise and service areas
-- `about.html` — company approach and founder; Team and Leadership are intentionally unfilled
-- `contact.html` — interim contact information; a dedicated business email is not yet configured
-- `projects.html` — neutral holding page for future approved company projects, not linked in the main navigation
+| Page | Purpose |
+| --- | --- |
+| `index.html` | Company introduction, mission and vision, core capabilities, focus areas, links to other pages |
+| `services.html` | Earth observation, InSAR, climate analytics, data/AI; questions, methods, deliverables, limitations and engagements |
+| `sectors.html` | Government, energy/infrastructure, environment, agriculture/water, research; intended applications and limits |
+| `approach.html` | Workflow, scientific quality standards, deliverables, collaboration and data safeguards |
+| `insights.html` | Original short technical explainers, links to official data sources, plain-language glossary |
+| `about.html` | Proposed mission, vision, strategic goals, company values, founder, unfilled team and leadership, business readiness |
+| `contact.html` | Enquiry guidance, partnership pathways, founder's existing professional contact route and current business-status notice |
+| `privacy.html` | Accurate website information and privacy notice |
+| `sitemap.xml` | Current pages for discovery |
 
-## Brand and implementation
+## Active assets
 
-- `assets/geofrontier-orbital-logo.png` — website-sized copy of the approved GF/satellite logo (original design retained separately)
-- `assets/favicon.svg` — simplified GF favicon for small browser icon sizes
-- `css/site-v2.css` — active responsive website design
-- `js/site-v2.js` — active navigation and year script
-- `css/styles.css` and `js/main.js` — historical V1 assets, no longer loaded by current pages
+- `assets/geofrontier-orbital-logo.png` — approved GF monogram, circular mark and separate satellite
+- `assets/favicon.svg` — compact GF/favicon mark
+- `css/site-v2.css` — active responsive styling
+- `js/site-v2.js` — mobile navigation and current year
 
-The homepage uses NASA's Apollo 17 Earth photograph, with credit and source linked on the page. No photos or figures from the founder's academic projects are used as company case studies.
+The homepage's Apollo 17 Earth photograph is linked with NASA public-domain credit and a source URL. The founder portrait comes from the founder's own public website.
 
-## Editorial and accuracy policy
+## Editorial safeguards
 
-- Do not publish the founder's personal research projects or PhD work on this company site.
-- Do not present non-company academic work as GeoFrontier contracts.
-- Do not invent client logos, team or leadership members, partnerships, project results, or legal registration status.
-- Name Stephen Nyaranga as Founder. Leave team and leadership membership unfilled until people are appointed and have agreed to publication.
-- Document image provenance, limits of scientific conclusions and external-source permissions.
-- Business registration and procurement eligibility are still to be verified.
+- **Do not publish PhD work or the founder's personal research/projects as GeoFrontier case studies.**
+- The business is described as **in development**, not incorporated or procurement-qualified unless this can be verified.
+- Founder: Stephen Nyaranga. Team and Leadership positions must remain unfilled until confirmed.
+- Avoid fictional employees, addresses, contact details, contracts, testimonials, registrations, certificates, quantitative project outcomes or client endorsements.
+- Service and sector applications are prospective rather than claims of completed commercial delivery.
+- Any future project needs a verifiable source and permission to publish images, results, datasets and partner names.
 
-## Deployment
+## Company mission and goals
 
-Static HTML, CSS and JavaScript, hosted with GitHub Pages from the repository's `main` branch, root folder. No secrets, build step, framework, or production form backend are required.
+The proposed mission and vision and six strategic goals are published in the About page. Their wording should be reviewed by the founder before formal incorporation and used consistently in external materials.
 
-Before a public business launch, verify company name/registration, confirm contact details, review accessibility, and activate a privacy-compliant enquiry method.
+## Deployment and maintenance
+
+Static site, served from `main` at repository root through GitHub Pages. No build system or authentication secrets are required.
+
+To preview locally: `python -m http.server 8000`, then open `http://localhost:8000`.
+
+Before a formal business launch, verify name clearance and registration with Kenya's Business Registration Service, determine applicable tax/permit/data protection obligations, assess procurement eligibility, and establish an official company email and privacy-compliant enquiry system.
+
+## Audit checklist
+
+Verify all local links and anchored sections, visible approved logo, mobile navigation, academic-project exclusion, mission/vision/values presence, empty Team/Leadership, and successful GitHub Pages deployment after each substantive change.
