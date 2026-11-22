@@ -656,3 +656,40 @@
 @media(prefers-reduced-motion:reduce){
  .geofrontier-video-media video {display:none!important}
 }
+
+
+/* Mixed documentary media: video on Home and Monitoring, still photographs
+   on Expertise and Education. Keep the original page layout and text. */
+.geofrontier-photo-media {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.geofrontier-photo-media > img {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}
+.geofrontier-services-video .geofrontier-photo-media {
+  background-image: url("../assets/media/gnss-receiver.webp");
+}
+.geofrontier-services-video .geofrontier-photo-media > img {
+  object-position: center 44%;
+}
+.geofrontier-education-video .geofrontier-photo-media {
+  background-image: url("../assets/media/suomi-npp.webp");
+}
+.geofrontier-video-footer .geofrontier-photo-media > img {
+  object-position: center 46%;
+}
+.geofrontier-monitoring-video .geofrontier-video-shade {
+  background: linear-gradient(90deg, rgba(6,36,33,.88), rgba(8,39,35,.68) 60%, rgba(8,38,34,.58));
+}
+@media (prefers-reduced-motion: reduce) {
+  .geofrontier-photo-media > img { transform: none; animation: none; }
+}
