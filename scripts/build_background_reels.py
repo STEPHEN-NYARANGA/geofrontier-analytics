@@ -27,9 +27,10 @@ SOURCE_URLS = {
 # Segments are taken from NASA videos with deliberately different content.
 # Approximate durations are kept short for responsible bandwidth consumption.
 REELS = {
-    "geofrontier-home-reel": [("orbit", 3.0, 5.5), ("overview", 13.0, 5.5), ("crew", 5.0, 5.5)],
-    "geofrontier-monitoring-reel": [("overview", 23.0, 6.0), ("orbit", 13.0, 6.0)],
-    "geofrontier-learning-reel": [("crew", 3.0, 6.0), ("orbit", 7.0, 6.0)],
+    # Start AFTER the NASA title cards so actual moving imagery appears at once.
+    "geofrontier-home-reel": [("orbit", 20.0, 5.5), ("overview", 40.0, 5.5), ("crew", 20.0, 5.5)],
+    "geofrontier-monitoring-reel": [("overview", 40.0, 6.0), ("orbit", 30.0, 6.0)],
+    "geofrontier-learning-reel": [("crew", 20.0, 6.0), ("orbit", 28.0, 6.0)],
 }
 
 def run(*command: str, timeout: int = 100) -> None:
@@ -65,6 +66,7 @@ def duration(path: Path) -> float:
 
 def encode_segment(source: Path, out: Path, offset: float, seconds: float) -> None:
     clip_duration = duration(source)
+    print("Video duration", source.name, clip_duration, "requested offset", offset, flush=True)
     if clip_duration < seconds + 0.3:
         raise RuntimeError(f"Clip too short: {source.name} ({clip_duration}s)")
     offset = min(offset, clip_duration - seconds - 0.2)
