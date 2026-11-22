@@ -1,0 +1,41 @@
+name: Cache credited science media
+
+on:
+  push:
+    paths:
+      - "scripts/cache_media.py"
+      - ".github/workflows/media-cache.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  download-media:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install image tools
+        run: python -m pip install --disable-pip-version-check pillow
+      - name: Cache credited NASA and USGS media
+        run: python scripts/cache_media.py
+      - name: Commit optimised files and update media references
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets/media
+          git add -A -- '*.html'
+          if ! git diff --cached --quiet; then
+            git commit -m "Cache credited NASA and USGS media for local website delivery"
+            git push
+          else
+            echo "No media changes to commit."
+          fi
