@@ -1,6 +1,6 @@
 # GeoFrontier Analytics
 
-Website for **GeoFrontier Analytics**, a proposed scientific consultancy focused on Earth observation, geospatial analysis, environmental intelligence and responsible applications of AI.
+Website for **GeoFrontier Analytics**, a proposed scientific consultancy focused on Earth observation, flood and environmental monitoring, climate forecasting support, geospatial analysis and responsible applications of AI.
 
 Live URL (after GitHub Pages deployment): https://stephen-nyaranga.github.io/geofrontier-analytics/
 
@@ -9,7 +9,8 @@ Live URL (after GitHub Pages deployment): https://stephen-nyaranga.github.io/geo
 | Page | Purpose |
 | --- | --- |
 | `index.html` | Company introduction, mission and vision, core capabilities, focus areas, links to other pages |
-| `services.html` | Earth observation, InSAR, climate analytics, data/AI; questions, methods, deliverables, limitations and engagements |
+| `services.html` | Earth observation, InSAR, climate analytics, forecasting and monitoring, data/AI; methods, deliverables, limitations and engagements |
+| `monitoring.html` | Proposed flood monitoring, ENSO/La Niña climate-driver monitoring, seasonal and subseasonal forecasting support, drought, extreme heat and environmental change services. Clearly distinguishes analytical support from official warnings. |
 | `sectors.html` | Government, energy/infrastructure, environment, agriculture/water, research; intended applications and limits |
 | `approach.html` | Workflow, scientific quality standards, deliverables, collaboration and data safeguards |
 | `insights.html` | Original technical explainers, links to data sources, a glossary and the independent forecasting initiative |
@@ -35,6 +36,8 @@ The homepage's Apollo 17 Earth photograph is linked with NASA public-domain cred
 - Founder: Stephen Nyaranga. Team and Leadership positions must remain unfilled until confirmed.
 - Avoid fictional employees, addresses, contact details, contracts, testimonials, registrations, certificates, quantitative project outcomes or client endorsements.
 - Service and sector applications are prospective rather than claims of completed commercial delivery.
+- Forecast interpretation and hazard monitoring services must cite sources, issue times, uncertainty, validation status and lead times. GeoFrontier does not currently provide 24/7 alerts, official hazard warnings or guaranteed live forecasts.
+- Public warnings and emergency directives remain with authorised national meteorological, hydrological and disaster-management authorities.
 - Any future project needs a verifiable source and permission to publish images, results, datasets and partner names.
 
 ## Company mission and goals
@@ -51,4 +54,4 @@ Before a formal business launch, verify name clearance and registration with Ken
 
 ## Audit checklist
 
-Verify all local links and anchored sections, visible approved logo, mobile navigation, academic-project exclusion, mission/vision/values presence, empty Team/Leadership, and successful GitHub Pages deployment after each substantive change.
+Verify all local links and anchored sections, visible approved logo, mobile navigation, academic-project exclusion, clear separation of forecasting competition work and proposed consulting services, mission/vision/values presence, empty Team/Leadership, and successful GitHub Pages deployment after each substantive change.
