@@ -312,3 +312,94 @@
 .home-forecast .inline-link{margin-top:10px}
 @media(max-width:1000px){.forecast-overview-grid,.forecast-feature-grid,.home-forecast-grid,.forecast-quality-grid,.forecast-limits .shell{gap:35px}.forecast-steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:780px){.forecast-overview,.forecast-method,.forecast-evidence,.forecast-quality,.forecast-experiments,.forecast-limits,.forecast-feature,.home-forecast{padding:72px 0}.forecast-overview-grid,.forecast-feature-grid,.home-forecast-grid,.forecast-quality-grid,.forecast-limits .shell{grid-template-columns:1fr;gap:30px}.forecast-steps,.forecast-experiment-grid{grid-template-columns:1fr}.forecast-steps article,.forecast-experiment-grid article{min-height:auto}.forecast-hero .page-hero-grid{grid-template-columns:1fr}.forecast-quality-panel{padding:27px}.forecast-table-wrap{margin:20px 0}}
+
+
+/* Forecasting and monitoring business service, November 2026 */
+.risk-hero{background:linear-gradient(125deg,#ecf2e9 0%,#f7f4ec 59%,#e0e9e2 100%)}
+.risk-hero .hero-side-note{background:#173f40;color:#f8faf3;padding:28px 29px;border-left:4px solid #b99e7c;line-height:1.75}
+.risk-hero .hero-side-note strong{font-size:16px;font-weight:670}
+.risk-hero .hero-side-note p{font-size:14px;color:#d8e7df;margin:11px 0 0}
+.risk-home-section{background:#edf1e9;padding:113px 0 106px}
+.risk-home-head{display:grid;grid-template-columns:1.3fr .75fr;gap:80px;align-items:end;margin-bottom:39px}
+.risk-home-head h2{max-width:740px}
+.risk-home-head p{font-size:16px;line-height:1.84}
+.risk-home-head .inline-link{margin-top:15px}
+.risk-home-list{border-top:1px solid #c9d6c9}
+.risk-home-list>a{display:grid;grid-template-columns:24% 1fr 35px;gap:35px;align-items:start;padding:30px 0 34px;border-bottom:1px solid #c9d6c9;transition:padding .2s}
+.risk-home-list>a:hover{padding-left:8px}
+.risk-home-label{text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:#9f654d;font-weight:720;padding-top:8px}
+.risk-home-list h3{font:400 clamp(26px,2.6vw,36px)/1.2 var(--serif);margin:0 0 10px}
+.risk-home-list p{font-size:15px;color:#55716d;margin:0;line-height:1.74}
+.risk-home-arrow{font-size:25px;color:#306b60}
+.risk-home-disclaimer{margin:24px 0 0;font-size:12px;color:#647b72;max-width:780px}
+.monitoring-intro{padding:110px 0 102px;background:#fffefa}
+.monitoring-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:85px}
+.monitoring-intro h2{max-width:640px}
+.monitoring-intro p{font-size:16px;line-height:1.87;margin-bottom:21px}
+.monitoring-intro strong{color:#173e3b}
+.monitoring-list{background:#f6f6f0;padding:25px 0 100px}
+.monitor-service{padding:64px 0;border-bottom:1px solid #cbd8cb;scroll-margin-top:120px}
+.monitor-service:first-child{border-top:1px solid #cbd8cb}
+.monitor-service-heading{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;margin-bottom:23px;align-items:end}
+.monitor-service-heading .monitor-kicker{grid-column:1/-1;color:#ab7155;font-size:12px;font-weight:750;text-transform:uppercase;letter-spacing:.1em}
+.monitor-service-heading h2{font-size:clamp(35px,3.7vw,51px);max-width:730px}
+.monitor-service-heading p{font-size:16px;line-height:1.83}
+.monitor-service-detail{display:grid;grid-template-columns:1fr 1fr;gap:65px;padding:29px 38px;background:#fffefa;border:1px solid #e1e8df}
+.monitor-service-detail h3{font:400 26px var(--serif);margin:4px 0 18px}
+.monitor-service-detail p,.monitor-service-detail ul{font-size:15px;line-height:1.83}
+.monitor-service-detail ul{margin:0;padding-left:20px}
+.monitor-service-detail li{margin:0 0 12px}
+.monitor-service-detail li::marker{color:#a6795c}
+.monitor-service-detail .monitor-caution{font-size:13px;margin-top:24px;border-top:1px solid #dbe3d9;padding-top:17px;color:#4f6b63}
+.monitor-service-detail .monitor-caution a{color:#24675a;text-decoration:underline;text-underline-offset:3px}
+.monitoring-delivery{padding:105px 0;background:#dfe9df}
+.monitor-delivery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.monitor-delivery-grid article{background:#fbfaf4;padding:32px 35px;border-left:3px solid #8da595;min-height:220px}
+.monitor-delivery-grid article span{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:#a16b4e;font-weight:740}
+.monitor-delivery-grid h3{font:400 27px/1.25 var(--serif);margin:17px 0}
+.monitor-delivery-grid p{font-size:15px;line-height:1.85}
+.monitor-delivery-note{margin:24px 0 0;font-size:13px;color:#566c62}
+.monitor-source{padding:105px 0;background:#fffefa}
+.monitor-source h2{max-width:760px}
+.monitor-source-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
+.monitor-source-grid article{display:flex;flex-direction:column;border-top:2px solid #7fa18f;padding:27px 0;min-height:260px}
+.monitor-source-grid h3{font:400 28px/1.22 var(--serif)}
+.monitor-source-grid p{font-size:14px;line-height:1.84}
+.monitor-source-grid a{margin-top:auto;color:#23685c;font-size:13px;font-weight:720;text-decoration:underline;text-underline-offset:4px}
+.monitor-final{background:#1b4544;color:#f9faf4;padding:98px 0}
+.monitor-final-grid{display:grid;grid-template-columns:1fr 1fr;gap:84px}
+.monitor-final .section-label{color:#dabd9e}
+.monitor-final p{font-size:16px;line-height:1.87;color:#d7e4dc}
+.monitor-final .btn{background:#e4ebdf;color:#173d38;margin-top:20px}
+.forecast-assurance{background:#e6ece5;padding:98px 0}
+.forecast-assurance-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:19px;margin-bottom:29px}
+.forecast-assurance-grid article{background:#fffefa;padding:33px;border-top:3px solid #8da998}
+.forecast-assurance-grid h3{font:400 27px var(--serif)}
+.forecast-assurance-grid p{font-size:14px;line-height:1.84}
+@media(max-width:1370px){
+ .header-content{height:98px;justify-content:space-between}
+ .site-brand img{width:270px;max-height:90px}
+ .menu-toggle{display:block;margin-left:auto}
+ .site-nav{display:none;position:absolute;top:98px;left:0;right:0;z-index:31;background:#f5f2eb;padding:20px 24px;border-bottom:1px solid #d6ded7;box-shadow:0 18px 28px #2638331c;margin:0;flex-direction:column;align-items:flex-start;gap:6px}
+ .site-nav.open{display:flex}
+ .site-nav a{font-size:15px;padding:10px}
+ .header-contact{display:none}
+}
+@media(max-width:820px){
+ .risk-home-section,.monitoring-intro,.monitoring-list,.monitoring-delivery,.monitor-source,.monitor-final,.forecast-assurance{padding:70px 0}
+ .risk-home-head,.monitoring-intro-grid,.monitor-service-heading,.monitor-service-detail,.monitor-final-grid{grid-template-columns:1fr;gap:16px}
+ .risk-home-list>a{grid-template-columns:1fr 30px;gap:15px;padding:23px 0}
+ .risk-home-label{grid-column:1/-1;padding-top:0}
+ .risk-home-arrow{grid-column:2;grid-row:2}
+ .monitor-service{padding:40px 0}
+ .monitor-service-heading .monitor-kicker{grid-column:auto}
+ .monitor-service-heading h2{margin-bottom:8px}
+ .monitor-service-detail{padding:26px}
+ .monitor-delivery-grid,.monitor-source-grid,.forecast-assurance-grid{grid-template-columns:1fr}
+ .monitor-source-grid article{min-height:auto}
+}
+@media(max-width:780px){
+ .header-content{height:81px}
+ .site-nav{top:81px}
+ .site-brand img{width:220px;max-height:74px}
+}
