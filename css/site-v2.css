@@ -403,3 +403,117 @@
  .site-nav{top:81px}
  .site-brand img{width:220px;max-height:74px}
 }
+
+
+/* Education and capacity building. Original editorial layout, November 2026. */
+.learning-hero{background:linear-gradient(125deg,#f4f1e9 0%,#eef3ed 70%,#e2eae1 100%);overflow:hidden}
+.learning-hero .page-hero-grid{align-items:center}
+.learning-hero h1{max-width:930px}
+.learning-hero .page-hero-grid>div>p{max-width:740px}
+.learning-hero-actions{display:flex;align-items:center;gap:25px;flex-wrap:wrap;margin-top:24px}
+.learning-hero-note{position:relative;background:#1d4847;color:#f6f7ef;border-radius:2px;padding:45px 36px;overflow:hidden;min-height:295px}
+.learning-hero-note:after{content:"";position:absolute;width:250px;height:250px;right:-114px;top:-130px;border-radius:50%;border:1px solid #a5c1ae66;box-shadow:0 0 0 32px #a8c2ad1c,0 0 0 62px #a8c2ad10}
+.learning-hero-note .learning-note-label{color:#e4c8ab;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;position:relative;z-index:1}
+.learning-hero-note h2{font:400 33px/1.2 var(--serif);max-width:370px;color:#fff;margin:23px 0 21px;position:relative;z-index:1}
+.learning-hero-note p{font-size:14px;line-height:1.85;color:#d3e3dc;position:relative;z-index:1}
+.learning-purpose{padding:110px 0;background:#fffdfa}
+.learning-purpose-grid{display:grid;grid-template-columns:.94fr 1.06fr;gap:105px}
+.learning-purpose h2{max-width:670px}
+.learning-purpose-grid>div:last-child p{font-size:16px;line-height:1.92}
+.learning-purpose .learning-aside{margin-top:25px;padding-left:18px;border-left:3px solid #9faf91;color:#63796e;font-size:14px!important}
+.learning-pathways{padding:110px 0 105px;background:#e9eee8}
+.learning-tracks{margin-top:45px;border-top:1px solid #b7cabc}
+.learning-track{display:grid;grid-template-columns:36% 64%;gap:0;border-bottom:1px solid #b7cabc;padding:38px 0 40px}
+.track-heading{padding-right:48px}
+.track-heading>span{display:block;color:#9c624c;font-size:11px;font-weight:740;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+.track-heading h3{font:400 clamp(28px,3vw,42px)/1.2 var(--serif);margin:0}
+.learning-track>div:nth-child(2){padding:0 0 0 30px;border-left:1px solid #bfcec1}
+.learning-track>div:nth-child(2)>p:first-child{font-size:17px;line-height:1.84;max-width:780px}
+.learning-track h4{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:750;color:#426d5c;margin:21px 0 13px}
+.learning-track ul{display:grid;grid-template-columns:1fr 1fr;gap:7px 24px;padding-left:18px;font-size:14px;line-height:1.74;margin-bottom:21px}
+.learning-track li{padding:0 6px 0 0}
+.learning-track .track-outcome{margin:11px 0 0;font-size:13px;line-height:1.8;color:#52695f}
+.learning-track .track-outcome strong{color:#254d43}
+.learning-curriculum{padding:110px 0 116px;background:#193d40;color:#fbfcf5}
+.learning-curriculum-head{display:grid;grid-template-columns:1.25fr .75fr;gap:80px;align-items:end;margin-bottom:41px}
+.learning-curriculum-head .section-label{color:#e8b99a}
+.learning-curriculum-head p{color:#d2e3d9;font-size:16px;line-height:1.86}
+.learning-stages{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.learning-stages article{background:#ffffff0e;border:1px solid #aac7b445;min-height:305px;padding:27px 21px}
+.learning-stages article>span{display:block;color:#dfbda4;text-transform:uppercase;font-size:11px;letter-spacing:.11em;font-weight:720;margin-bottom:24px}
+.learning-stages h3{font:400 26px/1.2 var(--serif);color:#fff;margin:0 0 15px}
+.learning-stages p{font-size:13px;line-height:1.84;color:#d1e3da}
+.learning-projects{padding:108px 0;background:#f9f7f1}
+.learning-project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.learning-project-grid article{background:#fff;border:1px solid #e1e5dc;padding:32px 30px;min-height:280px;transition:border-color .2s}
+.learning-project-grid article:nth-child(2n){background:#eef1e9}
+.learning-project-grid article:hover{border-color:#8fa997}
+.learning-project-grid article>span{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.11em;font-weight:750;color:#a36950;margin-bottom:22px}
+.learning-project-grid h3{font:400 28px/1.25 var(--serif);margin-bottom:16px}
+.learning-project-grid p{font-size:14px;line-height:1.86}
+.learning-educators{padding:108px 0;background:#dfe9df}
+.learning-educators-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:90px}
+.learning-educators-grid>div:first-child p{font-size:16px;line-height:1.86}
+.educator-features article{padding:23px 0;border-top:1px solid #b1c5b5}
+.educator-features article:last-child{border-bottom:1px solid #b1c5b5}
+.educator-features h3{font:400 29px/1.2 var(--serif);margin:0 0 11px}
+.educator-features p{font-size:14px;line-height:1.84}
+.learning-safety{padding:106px 0 116px;background:#fffdfa}
+.learning-safety-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:19px;margin-top:40px}
+.learning-safety-grid article{padding:33px 35px;background:#e9eee8;border-top:2px solid #91a99a;min-height:200px}
+.learning-safety-grid article:nth-child(3),.learning-safety-grid article:nth-child(2){background:#f2eee6}
+.learning-safety-grid h3{font:400 27px var(--serif);margin-bottom:15px}
+.learning-safety-grid p{font-size:14px;line-height:1.87}
+.learning-references{background:#f5f5ef;padding:96px 0 105px}
+.learning-references h2{max-width:790px}
+.learning-resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:33px}
+.learning-resource-grid article{background:#fffefa;padding:29px;border-top:3px solid #a4b8a4;display:flex;flex-direction:column;min-height:250px}
+.learning-resource-grid h3{font:400 27px/1.22 var(--serif)}
+.learning-resource-grid p{font-size:14px;line-height:1.82}
+.learning-resource-grid a{font-size:14px;color:#225e56;margin-top:auto;text-decoration:underline;text-underline-offset:4px;font-weight:700}
+.learning-partners{background:#224b4a;color:#fbfcf7;padding:112px 0}
+.learning-partners-grid{display:grid;grid-template-columns:1.07fr .93fr;gap:110px}
+.learning-partners .section-label{color:#e3b99a}
+.learning-partners h2{max-width:720px;color:#fff}
+.learning-partners p{color:#e2eae5;line-height:1.87;font-size:16px}
+.learning-partners .learning-partner-note{color:#c0d4cd;font-size:13px;margin-top:20px}
+.learning-partners h3{font:400 31px var(--serif);color:#fff;margin-bottom:18px}
+.learning-partners ul{padding-left:21px;font-size:15px;line-height:1.85;color:#e3eee6}
+.learning-partners li{margin-bottom:12px}
+.learning-partners .btn{margin-top:19px;background:#f0eadf;color:#1d4741}
+.education-home{padding:112px 0 109px;background:#e9eee7}
+.education-home-top{display:grid;grid-template-columns:1.23fr .77fr;gap:78px;align-items:end;margin-bottom:37px}
+.education-home-top h2{max-width:740px}
+.education-home-top p{font-size:16px;line-height:1.86}
+.education-home-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}
+.education-home-cards>a{background:#fffdf7;border:1px solid #d5e0d7;padding:34px 29px;min-height:305px;display:flex;flex-direction:column}
+.education-home-cards>a:nth-child(2){background:#f1eadc}
+.education-home-cards>a>span:first-child{color:#a16c50;text-transform:uppercase;font-weight:730;font-size:11px;letter-spacing:.12em;margin-bottom:25px}
+.education-home-cards h3{font:400 29px/1.22 var(--serif)}
+.education-home-cards p{font-size:14px;line-height:1.84}
+.education-home-cards .tile-read{color:#1d675b;font-size:14px;font-weight:730;margin-top:auto}
+.education-home-caption{font-size:12px;color:#657e72;margin-top:22px}
+.about-education{padding:105px 0;background:#dfe9e2}
+.about-education-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:85px;align-items:center}
+.about-education h2{max-width:710px}
+.about-education p{font-size:16px;line-height:1.88}
+.about-education-art{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;min-height:250px;padding:30px;border-radius:50%;border:1px solid #7b9e86}
+.about-education-art:before{content:"";position:absolute;inset:18px;border:1px solid #9db4a1;border-radius:50%}
+.about-education-art span{display:inline-block;z-index:1;background:#245751;color:#fffdf8;padding:10px 12px;border-radius:3px;font-size:12px;letter-spacing:.04em}
+.partner-grid a{color:#1b6458;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:1160px){
+ .learning-stages{grid-template-columns:repeat(3,1fr)}
+ .learning-project-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:780px){
+ .learning-purpose,.learning-pathways,.learning-curriculum,.learning-projects,.learning-educators,.learning-safety,.learning-references,.learning-partners,.education-home,.about-education{padding:75px 0}
+ .learning-purpose-grid,.learning-curriculum-head,.learning-educators-grid,.learning-partners-grid,.education-home-top,.about-education-grid{grid-template-columns:1fr;gap:25px}
+ .learning-track{grid-template-columns:1fr;gap:18px}
+ .learning-track>div:nth-child(2){padding-left:0;border-left:0}
+ .learning-track ul{grid-template-columns:1fr}
+ .learning-stages,.learning-project-grid,.learning-safety-grid,.learning-resource-grid,.education-home-cards{grid-template-columns:1fr}
+ .learning-stages article,.learning-project-grid article,.learning-resource-grid article,.education-home-cards>a{min-height:auto}
+ .learning-hero-note{min-height:auto;padding:32px 29px}
+ .about-education-art{min-height:200px}
+ .learning-partners-grid{gap:15px}
+}
