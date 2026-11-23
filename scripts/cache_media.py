@@ -21,6 +21,8 @@ PAGES = [
     "forecasting.html", "contact.html", "privacy.html", "media-credits.html",
 ]
 SOURCES = [
+    ("founder-stephen", "https://stephen-nyaranga.github.io/images/hero-stephen.webp"),
+    ("seasonblend-quicklook-20261119", "https://raw.githubusercontent.com/STEPHEN-NYARANGA/s2s-postprocessing-ecmwf/main/results/20261119/quicklook_20261119.png"),
     ("gnss-receiver", "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/20221102_113357.jpg"),
     ("gps-field", "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/200703_CA_GPS.JPG"),
     ("gps-backpack", "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/EN7BackpackGPS.jpg"),
