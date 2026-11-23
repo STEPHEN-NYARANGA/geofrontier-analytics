@@ -693,3 +693,80 @@
 @media (prefers-reduced-motion: reduce) {
   .geofrontier-photo-media > img { transform: none; animation: none; }
 }
+
+
+/* November 2026 review improvements: scoped service offers, founder proof,
+   safer enquiry preparation and one realistic education workshop.
+   All enhancements keep the existing visual identity and motion backgrounds. */
+.focus-home{background:#e9eee8;padding:108px 0}
+.focus-home-heading,.service-summary-heading{display:grid;grid-template-columns:1.12fr .88fr;gap:70px;align-items:end;margin-bottom:39px}
+.focus-home-heading h2,.service-summary-heading h2{max-width:750px}
+.focus-home-heading>p,.service-summary-heading>p{font-size:16px;line-height:1.86;max-width:520px}
+.focus-home-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.focus-home-grid article{background:#fbfaf4;padding:41px 37px;border-top:3px solid #9cb29f;display:flex;flex-direction:column;align-items:flex-start}
+.focus-home-grid article:nth-child(2){background:#eef4eb}
+.focus-home-tag{font-size:11px;font-weight:740;letter-spacing:.1em;text-transform:uppercase;color:#9e684f;margin-bottom:24px}
+.focus-home-grid h3{font:400 clamp(29px,3.2vw,43px)/1.2 var(--serif);margin-bottom:18px}
+.focus-home-grid p{font-size:15px;line-height:1.85}
+.focus-home-grid .inline-link{margin-top:auto}
+.focus-home-note,.entry-offers-note{font-size:12px;color:#64786d;line-height:1.85;margin:23px 0 0}
+.founder-home{background:#e0e9e1;padding:98px 0}
+.founder-home-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:90px;align-items:center}
+.founder-home h2{max-width:760px}
+.founder-home p{font-size:16px;line-height:1.9;max-width:800px}
+.founder-home-links{display:flex;flex-direction:column;align-items:flex-start;gap:22px;padding-left:40px;border-left:2px solid #8cab98}
+.founder-links{display:flex;flex-wrap:wrap;gap:14px 22px;margin:20px 0 22px}
+.service-summary{background:#eef1e9;padding:83px 0 90px}
+.service-summary-table-wrap{overflow-x:auto;border:1px solid #cfdbd1;background:#fffdf7}
+.service-summary-table{width:100%;min-width:660px;border-collapse:collapse;text-align:left}
+.service-summary-table th{background:#214a44;color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:.08em;padding:19px 20px}
+.service-summary-table td{font-size:14px;line-height:1.75;padding:21px 20px;vertical-align:top;border-bottom:1px solid #dce5dd}
+.service-summary-table tr:last-child td{border-bottom:0}
+.service-summary-table td:first-child{font-weight:650;color:#284a41}
+.service-summary-table a{color:#226b5d;text-decoration:underline;text-underline-offset:3px}
+.entry-offers{padding:95px 0 98px;background:#f1f2eb;scroll-margin-top:110px}
+.entry-offers-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.entry-offers-grid article{background:#fffefa;padding:34px 28px;border-top:3px solid #b2c2ac;display:flex;flex-direction:column;align-items:flex-start}
+.entry-offers-grid article:nth-child(2){background:#eaf0e8}
+.entry-offers-grid article>span{font-size:11px;font-weight:760;letter-spacing:.1em;text-transform:uppercase;color:#976247}
+.entry-offers-grid h3{font:400 31px/1.2 var(--serif);margin:18px 0}
+.entry-offers-grid p{font-size:14px;line-height:1.85}
+.entry-offers-grid .inline-link{margin-top:auto}
+.monitor-value{padding:96px 0;background:#e4eee7}
+.monitor-value-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:90px}
+.monitor-value-grid p{font-size:16px;line-height:1.84}
+.monitor-value-grid ul{padding-left:20px;font-size:14px;line-height:1.85}
+.monitor-value-grid li{margin-bottom:8px}
+.learning-first-workshop{padding:98px 0;background:#e1ebe4;scroll-margin-top:110px}
+.first-workshop-grid{display:grid;grid-template-columns:1.07fr .93fr;gap:78px}
+.first-workshop-grid p{font-size:15px;line-height:1.86}
+.first-workshop-details{border-left:2px solid #a6beab;padding:0 0 0 34px}
+.first-workshop-details p{padding-bottom:13px;border-bottom:1px solid #bed0bf;font-size:14px;line-height:1.8}
+.first-workshop-details a{margin-top:19px}
+.contact-brief-helper{padding-top:23px;margin-top:22px;border-top:1px solid #c9d7cc}
+.contact-brief-helper h4{font:400 24px/1.3 var(--serif);margin:0 0 11px}
+.contact-brief-helper p{font-size:13px;line-height:1.82}
+.contact-brief-helper .btn-outline{background:transparent;border:1px solid #3e7265;color:#1c554a;padding:11px 17px;font-size:13px;cursor:pointer}
+.contact-brief-helper .btn-outline:hover{background:#e5eee6}
+.contact-brief-helper button:focus-visible{outline:3px solid #a8714b;outline-offset:3px}
+.copy-enquiry-feedback{min-height:1.6em;color:#225b4e}
+.note-meta{font-size:11px;color:#7b6b5b;letter-spacing:.04em;margin-bottom:10px}
+.note-service{margin:20px 0 0}
+.note-service a,.forecast-context a{color:#1a6757;text-decoration:underline;text-underline-offset:3px;font-weight:650}
+.forecast-context{padding:26px 0;background:#e5eee7}
+.forecast-context .shell{display:grid;grid-template-columns:220px 1fr;gap:35px;align-items:center}
+.forecast-context p:not(.section-label){font-size:13px;line-height:1.75;margin:0}
+@media(max-width:1050px){
+ .focus-home-heading,.service-summary-heading{gap:30px}
+ .founder-home-grid,.first-workshop-grid,.monitor-value-grid{gap:34px}
+ .entry-offers-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:780px){
+ .focus-home,.founder-home,.service-summary,.entry-offers,.monitor-value,.learning-first-workshop{padding:72px 0}
+ .focus-home-heading,.focus-home-grid,.founder-home-grid,.service-summary-heading,.monitor-value-grid,.first-workshop-grid,.forecast-context .shell{grid-template-columns:1fr;gap:24px}
+ .focus-home-grid article{padding:27px 25px}
+ .entry-offers-grid{grid-template-columns:1fr}
+ .entry-offers-grid article{padding:28px 25px}
+ .founder-home-links{padding-left:17px;gap:15px}
+ .first-workshop-details{padding-left:18px}
+}
