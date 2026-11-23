@@ -37,3 +37,35 @@
     reduced.addEventListener("change",event=>{if(event.matches)pauseAll()});
   }
 })();
+
+/* Draft-only client enquiry helper: local clipboard action, no data submission. */
+(()=>{
+ const button=document.querySelector("[data-copy-enquiry]");
+ const status=document.querySelector("[data-copy-enquiry-status]");
+ if(!button||!status)return;
+ const brief=[
+  "Hello, I would like to discuss a possible GeoFrontier Analytics project.",
+  "",
+  "Organisation / role: ",
+  "Area of interest (general location only): ",
+  "Decision or problem to address: ",
+  "Existing data or official information: ",
+  "Type of support: climate evidence / InSAR screening / flood map / GIS / GNSS / training / other",
+  "Desired output and approximate timeframe: ",
+  "",
+  "I can share additional technical details after we agree a suitable private channel."
+ ].join("\n");
+ button.addEventListener("click",async()=>{
+   try{
+     if(navigator.clipboard&&window.isSecureContext)await navigator.clipboard.writeText(brief);
+     else{
+       const el=document.createElement("textarea");
+       el.value=brief;el.style.cssText="position:fixed;left:-9999px;top:-9999px";
+       document.body.appendChild(el);el.select();
+       if(!document.execCommand("copy"))throw new Error("Clipboard access unavailable");
+       el.remove();
+     }
+     status.textContent="Enquiry outline copied. Edit it before sending through LinkedIn.";
+   }catch(e){status.textContent="Copy is unavailable in this browser. Please use the four-question brief below.";}
+ });
+})();
