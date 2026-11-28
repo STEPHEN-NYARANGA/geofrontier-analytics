@@ -770,3 +770,46 @@
  .founder-home-links{padding-left:17px;gap:15px}
  .first-workshop-details{padding-left:18px}
 }
+
+
+/* GeoFrontier — direct contact and Radar / UAV education
+   Additional components only: preserve the established editorial design. */
+.contact-direct-grid { display:grid; gap:15px; margin:25px 0 25px; }
+.contact-direct-item { padding:16px 0 17px; border-top:1px solid #bbccc1; min-width:0; }
+.contact-direct-item:last-child { border-bottom:1px solid #bbccc1; }
+.contact-direct-label { display:block; text-transform:uppercase; letter-spacing:.08em; font-size:10px; font-weight:760; color:#62786c; margin-bottom:8px; }
+.contact-direct-value { display:block; font-size:clamp(14px,1.6vw,18px); color:#185b50; font-weight:700; overflow-wrap:anywhere; text-decoration:underline; text-underline-offset:4px; }
+.contact-direct-value:hover,.contact-direct-value:focus-visible { color:#0b4038; }
+.contact-quick-actions { display:flex; align-items:center; flex-wrap:wrap; gap:18px; }
+.contact-channel-note { font-size:12px!important; color:#526d61; line-height:1.8; margin-top:22px; }
+.learning-radar-uav { padding:104px 0; background:#e7eee8; scroll-margin-top:110px; }
+.learning-radar-uav-head { display:grid; grid-template-columns:1.06fr .94fr; gap:76px; align-items:end; margin-bottom:42px; }
+.learning-radar-uav-head h2 { max-width:760px; }
+.learning-radar-uav-head>p { font-size:16px; line-height:1.9; max-width:610px; }
+.learning-radar-uav-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.learning-radar-uav-grid>article { background:#fffefa; padding:35px 30px 34px; border-top:3px solid #8da991; display:flex; flex-direction:column; min-width:0; }
+.learning-radar-uav-grid>article:nth-child(2) { background:#f1ebdf; border-color:#b49d74; }
+.learning-radar-uav-grid article>span { color:#936a4d; text-transform:uppercase; font-weight:750; font-size:11px; letter-spacing:.11em; }
+.learning-radar-uav-grid h3 { font:400 clamp(25px,2.65vw,35px)/1.22 var(--serif); color:#1c4842; margin:18px 0; }
+.learning-radar-uav-grid p { font-size:14px; line-height:1.82; }
+.learning-radar-uav-grid ul { margin:14px 0 23px; padding-left:20px; font-size:13px; line-height:1.85; }
+.learning-radar-uav-grid li { margin:0 0 8px; }
+.learning-radar-uav-grid .learning-module-outcome { border-top:1px solid #d5dfd6; margin-top:auto; padding-top:18px; font-size:12px; color:#526b61; }
+.learning-radar-uav-boundary { display:grid; grid-template-columns:1fr 1fr; gap:54px; padding:36px 40px; background:#d2e0d4; margin-top:23px; }
+.learning-radar-uav-boundary h3 { font:400 30px/1.25 var(--serif); margin:0 0 12px; }
+.learning-radar-uav-boundary p { font-size:14px; line-height:1.85; margin:0 0 15px; }
+.learning-radar-uav-boundary .inline-link { display:block; margin:12px 0 0; font-size:13px; }
+.learning-radar-uav-action { display:flex; align-items:center; justify-content:space-between; gap:35px; padding-top:28px; }
+.learning-radar-uav-action p { font-size:16px; line-height:1.72; max-width:650px; }
+.learning-radar-uav-action .btn { flex:none; }
+@media(max-width:1100px) {
+  .learning-radar-uav-head,.learning-radar-uav-boundary { gap:28px; }
+  .learning-radar-uav-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:780px) {
+  .learning-radar-uav { padding:74px 0; }
+  .learning-radar-uav-head,.learning-radar-uav-grid,.learning-radar-uav-boundary { grid-template-columns:1fr; gap:20px; }
+  .learning-radar-uav-grid>article { padding:28px 25px; }
+  .learning-radar-uav-boundary { padding:27px 25px; }
+  .learning-radar-uav-action { align-items:flex-start; flex-direction:column; gap:12px; }
+}
